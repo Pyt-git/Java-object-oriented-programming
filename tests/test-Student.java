@@ -4,5 +4,5 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentTest {
 
   void testConstructorInitializesFields() {
-    Student s = new Student
+    Student s = new Student("Alice", 
 
