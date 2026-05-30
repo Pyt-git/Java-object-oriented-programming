@@ -4,5 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class Node {
 
   void testConstructorInitializesFields() {
+
+    Node n = new Node(
     
 
