@@ -26,4 +26,6 @@ class StudentTest {
     assertEquals(76, s1.passed()); // true
     assertEquals(57, s2.passed()); // false
     assertEquals(93, s3.passed()); // true
+  }
+}
 
