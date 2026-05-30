@@ -5,7 +5,8 @@ class BankAccountTest {
 
   void testConstructorInitializesFields() {
     BankAccount acc = new BankAccount("Alice", 100.0);
-    assertEquals(100.0, acc.getBalance());
+    assertEquals("Alice", acc.owner);
+    assertEquals("100.0", acc.balance);
   }
 
   void testDepositIncreasesBalance() {
