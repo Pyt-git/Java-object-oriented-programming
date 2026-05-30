@@ -30,7 +30,7 @@ class StudentTest {
 
   void testBoundaryGrade() {
     Student s = new Student("Dana", 60); 
-    assertTrue(s1.passed()); 
+    assertTrue(s.passed()); 
   }
 }
 
