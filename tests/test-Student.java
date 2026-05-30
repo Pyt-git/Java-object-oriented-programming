@@ -5,17 +5,18 @@ class StudentTest {
 
   void testConstructorInitializesFields() {
     Student s = new Student("Alice", 85); 
-    assertEquals(85, s.passed());
+    assertEquals("Alice", s.name);
+    assertEquals(85, s.grade);
   }
 
   void testPassingGrade() {
     Student s = new Student("Robert", 96); 
-    assertEquals(96, s.passed());
+    assertTrue(s.passed());
   }
 
   void testFailingGrade() {
     Student s = new Student("Liliana", 59); 
-    assertEquals(59, s.passed());
+    assertFalse(s.passed());
   }
 
   void testMixedStatusGrades() {
@@ -23,9 +24,13 @@ class StudentTest {
     Student s2 = new Student("Nathan", 57); 
     Student s3 = new Student("Ashley", 93); 
 
-    assertEquals(76, s1.passed()); // true
-    assertEquals(57, s2.passed()); // false
-    assertEquals(93, s3.passed()); // true
+    assertTrue(s1.passed()); // true
+    assertFalse(s2.passed()); // false
+    assertTrue(s3.passed()); // true
+
+  void testBoundaryGrade() {
+    Student s = new Student("Dana", 60); 
+    assertTrue(s1.passed()); 
   }
 }
 
